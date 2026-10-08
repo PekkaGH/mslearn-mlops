@@ -100,7 +100,7 @@ def main() -> None:
     endpoint = ensure_endpoint(ml_client, args.endpoint_name)
     print(f"Using endpoint: {endpoint.name}")
 
-    print(f"Creating or updating deployment '{args.deployment_name}'...")
+    print(f"Creating or updating deploy '{args.deployment_name}'...")
     deployment = create_or_update_deployment(
         ml_client=ml_client,
         endpoint_name=endpoint.name,
